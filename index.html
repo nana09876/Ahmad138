@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Ahmad Maulana</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.4/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+                /* Mulai dari luar layar sebelah kiri */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+                /* Mulai dari luar layar sebelah kanan */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+                /* Mulai dari luar layar atas */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+                /* Mulai dari luar layar bawah */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+                /* Mulai dari luar layar bawah */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            /* Atau sesuaikan dengan transform yang sesuai */
+        }
+
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .enter {
+            animation: slideInFromTop 1s ease-in-out;
+            /* Ganti dengan animasi lain sesuai kebutuhan */
+        }
+
+        .entry-paragraph1 {
+            animation: slideInFromLeft 1.5s ease-in-out;
+        }
+
+        .entry-paragraph2 {
+            animation: slideInFromBottom 2s ease-in-out;
+        }
+
+        .entry-image {
+            animation: slideInFromRight 2s ease-in-out;
+        }
+
+        #article {
+            animation: slideInFromBottom 2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="absolute inset-x-0 top-0 z-50 items-center justify-center">
+        <nav id="navbar"
+            class="flex items-center justify-between p-6 shadow-lg lg:px-8 fixed top-0 w-full bg-transparent z-50 backdrop-blur-sm"
+            aria-label="Global">
+            <div class="lg:flex space-x-4">
+                <a href="#hero"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-orange-600">Ahmad
+                    <span class="text-blue-500 hover:text-orange-600">Maulana</span></a>
+                <a href="#Home"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Home</a>
+                <a href="#Materi"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Materi</a>
+            </div>
+
+
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com/a.hmadmaulana/?igshid=YTQwZjQ0NmI0OA%3D%3D" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./public/instagram-2016-logo-svgrepo-com.svg"
+                        class="w-8 h-8 hover:scale-110 transition-all duration-500" alt="">
+                </a>
+
+            </div>
+        </nav>
+
+        </div>
+    </header>
+
+    <section id="Home">
+        <div class="bg-transparent py-24 mt-18 grid overflow-hidden">
+            <div class="flex flex-col">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row lg:justify-between">
+                        <div class="mx-auto max-w-2xl md:flex-auto mt-32">
+                            <h2 id="entry-text" class="text-4xl font-bold tracking-tight sm:text-4xl text-gray-600">
+                                HI👋, Saya
+                                <span class="text-blue-400"> AHMAD MAULANA </span>
+                            </h2>
+                            <p id="entry-paragraph1" class="mt-2 text-2xl leading-8 text-gray-600">Mahasiswa :
+                                Universitas Muhammadiyyah Cirebon
+                            </p>
+                            <p id="entry-paragraph2" class="mt-6  text-gray-600">
+                                Selamat datang, sahabat pembaca yang luar biasa! 🌟 Terima kasih telah singgah di tempat
+                                spesial saya, di mana ide-ide dan cerita hidup bersatu dalam harmoni digital. 📚🖥️
+                            </p>
+
+                            <p id="entry-paragraph3" class="mt-2  text-gray-600">Mari kita jelajahi bersama setiap
+                                halaman, seperti kita
+                                berlayar di lautan pengetahuan
+                                dan inspirasi. Setiap klik adalah langkah ke dunia yang penuh warna di balik layar ini.
+                                🚀✨
+                            </p>
+
+                            <p id="entry-paragraph4" class="mt-2  text-gray-600">Saya sangat bersemangat untuk berbagi
+                                pengalaman, tips, dan
+                                pandangan pribadi yang
+                                semoga dapat memberikan sentuhan positif pada setiap kunjungan Anda. 🌈🤗
+                            </p>
+
+                            <p id="entry-paragraph5" class="mt-2  text-gray-600">Semoga setiap kunjungan di sini membawa
+                                keceriaan dan
+                                pengetahuan baru. Terima kasih
+                                telah menjadi bagian dari perjalanan ini. Selamat menikmati setiap halaman, dan mari
+                                kita bersama-sama merajut kisah yang tak terlupakan! 📖💻🌟
+                            </p>
+                        </div>
+                        <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-2">
+                            <div class="md:flex-shrink-0 md:flex-grow">
+                                <img class="mt-20" src="./public/foto3.png" alt="Your Image" id="entry-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Materi" class="mt-20">
+        <h1 class="text-xl font-bold text-gray-600 text-center" id="entry-text">MATERI <p>SISTEM
+                INFORMASI (APSI)</p>
+        </h1>
+        <div class="mx-auto flex flex-col grid gap-9 lg:grid-cols-3 md:grid-cols-2 p-4" id="article">
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="./src/article1.html"></a>
+                </div>
+                <div class="group relative bg-fixed">
+                    <img src="./public/konsep dasar.png" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="./src/article1.html">
+                            <span class="absolute inset-0 "></span>
+                            BAB 1 <p>KONSEP DASAR</p>
+                        </a>
+
+                    </h3>
+
+                </div>
+
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="./src/article2.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="./public/bab 2.jpg " class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="./src/article2.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 2 <p>PENGEMBANGAN SISTEM</p>
+                        </a>
+                    </h3>
+
+                </div>
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="./src/article3.html" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600
+                        hover:bg-gray-100"></a>
+                </div>
+                <div class="group relative">
+                    <img src="./public/bab 3.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="./src/article3.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 3 <p>KEBIJAKAN & PERENCANAAN SISTEM</p>
+                        </a>
+                    </h3>
+                </div>
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="./src/article4.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="./public/bab4.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="./src/article4.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 4 <p>BELUM DAPET MATERI</p>
+                        </a>
+                    </h3>
+                </div>
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="./src/article5.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="./public/bab 5.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="./src/article5.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 5 <p>BELUM DAPET MATERI</p>
+                        </a>
+                    </h3>
+
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="./src/article6.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="./public/bab 6.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="./src/article6.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 6 <p>BELUM DAPET MATERI</p>
+                        </a>
+                    </h3>
+
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="./src/article7.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="./public/bab 7.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="./src/article7.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 7 <p>BELUM DAPET MATERI</p>
+                        </a>
+                    </h3>
+            </article>
+
+            <!-- More posts... -->
+        </div>
+    </section>
+
+    <div class="mt-18">
+        <footer class="bg-footer text-gray-600 p-2 shadow-inner">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2023 Ahmad Maulana. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.getElementById('entry-text');
+            const entryText = document.getElementById('entry-text');
+            const entryParagraph1 = document.getElementById('entry-paragraph1');
+            const entryParagraph2 = document.getElementById('entry-paragraph2');
+            const entryParagraph3 = document.getElementById('entry-paragraph3');
+            const entryParagraph4 = document.getElementById('entry-paragraph4');
+            const entryParagraph5 = document.getElementById('entry-paragraph5');
+            const entryImage = document.getElementById('entry-image')
+
+            // Tambahkan kelas 'enter' saat dokumen dimuat
+            navbar.classList.add('enter');
+            entryText.classList.add('enter');
+            entryParagraph1.classList.add('entry-paragraph1');
+            entryParagraph2.classList.add('entry-paragraph2');
+            entryParagraph3.classList.add('entry-paragraph3');
+            entryParagraph4.classList.add('entry-paragraph4');
+            entryParagraph5.classList.add('entry-paragraph5');
+            entryImage.classList.add('entry-image');
+
+            // Hilangkan kelas 'hidden' setelah 100ms untuk memberikan waktu transisi CSS
+            setTimeout(() => {
+                navbar.classList.remove('hidden');
+                entryText.classList.remove('hidden');
+                entryParagraph1.classList.remove('hidden');
+                entryParagraph2.classList.remove('hidden');
+                entryImage.classList.remove('hidden');
+            }, 500);
+        });
+
+
+
+        // Fungsi untuk melakukan scroll halus
+        function smoothScroll(targetId) {
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Menambahkan event listener pada link Materi
+        document.addEventListener('DOMContentLoaded', function () {
+            const materiLink = document.querySelector('a[href="#Materi"]');
+
+            if (materiLink) {
+                materiLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    smoothScroll('Materi');
+                });
+            }
+        });
+
+        // Menambahkan event listener pada link Home
+        document.addEventListener('DOMContentLoaded', function () {
+            const materiLink = document.querySelector('a[href="#Home"]');
+
+            if (materiLink) {
+                materiLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    smoothScroll('Home');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
