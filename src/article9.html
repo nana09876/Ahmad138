@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Maulana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="absolute inset-x-0 top-0 z-50 items-center justify-center">
+        <nav id="navbar"
+            class="flex items-center justify-between p-6 shadow-lg lg:px-8 fixed top-0 w-full bg-transparent z-50 backdrop-blur-md"
+            aria-label="Global">
+            <div class="lg:flex space-x-4">
+                <a href="#hero"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Ahmad
+                    <span class="text-blue-500 hover:text-purple-600">Maulana</span></a>
+                <a href="../index.html"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Home</a>
+                <a href="#Materi"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Materi</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/a.hmadmaulana/?igshid=YTQwZjQ0NmI0OA%3D%3D" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="../public/instagram-2016-logo-svgrepo-com.svg"
+                        class="w-8 h-8 hover:scale-110 transition-all duration-500" alt="">
+                </a>
+
+            </div>
+        </nav>
+
+        </div>
+    </header>
+
+    <!-- Article -->
+    <section class="container mx-auto mt-24">
+
+        <!-- Article Container -->
+        <article class="bg-white p-6 rounded-2xl shadow-2xl border border-gray-300">
+
+            <!-- Article Header -->
+            <header class="mb-6">
+                <h1 class="text-2xl font-bold text-gray-600">BAB 9. PERANGKAT PERMODELAN SISTEM</h1>
+            </header>
+            <br>
+            <br>
+            <br>
+            <!-- Article Content -->
+            <div class="prose">
+                <h1 class="font-bold text-2xl text-gray-600 ml-2">9.1 System Procedure Diagram (Flowmap)</h1>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    Digunakan untuk mendefinisikan hubungan antara bagian (pelaku proses), proses (manual
+                    atau berbasis komputer) dan aliran data (dalam bentuk dokumen masukan dan keluaran).
+                </p>
+                <br>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    System Procedure Diagram menggunakan simbol-simbol sebagai berikut:
+                </p>
+                <img src="../public/flowmap.png" class="mx-auto sm:ml-65 mt-10 items-center justify-center text-center"
+                    alt="">
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+            <h1 class="font-bold text-2xl text-gray-600 ml-2">9.2 Entity Relational Diagram (ERD)
+                Terinci
+            </h1>
+            <p class="text-lg text-gray-600 mt-4 ml-10">
+                Merupakan jaringan yang menggunakan susunan data yang disimpan dari sistem secara
+                abstrak. Tujuan dari Entity Relational ini adalah untuk menunjukkan objek data dan
+                relationship yang ada pada objek tersebut. Di samping itu Model ER ini merupakan salah satu
+                alat untuk perancangan dalam basis data.
+            </p>
+
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                1.Komponen ERD </p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">
+                    <span class="  text-gray-600">
+                        Masukan (input) merupakan awal dimulainya proses informasi. Bahan mentah dari informasi
+                        adalah data yg terjadi dari transaksi-transaksi yg dilakukan oleh organisasi.. Data hasil dari
+                        transaksi merupakan masukan untuk sistem informasi.
+                        Dokumen dasar merupakan formulir yang digunakan untuk menangkap (capture) data yang
+                        terjadi. Data yang sudah dicatat di dokumen dasar kemudian dimasukkan sebagai input ke
+                        sistem informasi untuk diolah.
+                    </span>
+                </li>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    1. <strong>Entity</strong> : suatu objek yang dapat dibedakan atau dapat diidentifikasikan secara
+                    unik dengan
+                    objek lainnya. <br>
+                    Simbol:
+                </p>
+                <img src="../Public/1.png" class="float-left mt-10" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    2. <strong>Relationship</strong>: hubungan yang terjadi antara satu entity dengan entity
+                    lainnya.<br>
+                    Simbol:</p>
+                <img src="../Public/2.png" class="float-left mt-10" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    3. <strong>Atribut</strong> : karakteristik dari Entity yang menyediakan penjelasan detail tentang
+                    entity
+                    tersebut. <br>
+                    Simbol:</p>
+                <img src="../Public/3.png" class="float-left mt-10 ml-4" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+            </ul>
+
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                2. Derajat Relationship </p>
+            <ul class="mt-5 space-y-4 ml-10">
+
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    1. Unary (Derajat satu): satu buah relationship menghubungkan satu buah entity
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    2. Binary (Derajat Dua): satu buah relationship menghubungkan dua buah entity.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    3. Ternary (Derajat Tiga): satu buah relationship menghubungkan tiga buah entity</p>
+            </ul>
+
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                3. Cardinality Rasio </p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">
+                    <span class="  text-gray-600">
+                        Yaitu menjelaskan batasan pada jumlah entity yang berhubungan melalui suatu relationship.
+                        Jenis-jenis Cardinality Rasio:
+                    </span>
+                </li>
+
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    1. One To One (1:1), yaitu perbandingan antara entity pertama dengan entity kedua
+                    berbanding satu berbanding satu
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    2. One To Many (1:M), yaitu perbandingan antara entity pertama dengan entity kedua
+                    berbanding satu berbanding banyak.</p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    3. Many To One (M:1), yaitu perbandingan antara entity pertama dengan entity kedua
+                    berbanding banyak berbanding satu.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    4. Many To Many (M:M), yaitu perbandingan antara entity pertama dengan entity kedua
+                    berbanding banyak berbanding banyak
+                </p>
+            </ul>
+
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                4. Langkah-Langkah Membuat ERD </p>
+            <ul class="mt-5 space-y-4 ml-10">
+
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    1. Mengidentifikasi dan menetapkan seluruh entity yang terlibat.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    2. Menentukan atribut-atribut key dari masing-masing entity
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    3. Menetapkan relationship antara satu entity dengan entity lainnya beserta foreign-keynya.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    4. Menentukan derajat dan cardinality rasio untuk setiap relationship.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    3. Melengkapi himpunan relasi dengan atribut-atribut yang bukan kunci (non key).
+                </p>
+            </ul>
+
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                5. Contoh Kasus
+            </p>
+            <ul class="mt-5 space-y-4 ml-10">
+
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    1. Suatu perguruan tinggi mempunyai banyak mahasiswa. Setiap mahasiswa biasanya
+                    mengikuti beberapa mata kuliah. Setiap mata kuliah diajarkan oleh seorang dosen dan
+                    seorang dosen bisa mengajar beberapa mata kuliah. Pada entitas Mahasiswa diperlukan
+                    informasi tentang NIM, Nama_Mhs, Alamat_Mhs dan Jurusan sedangkan Mata Kuliah
+                    diperlukan informasi Kd_MK, Nm_Mk, SKS, Semester sedangkan Dosen diperlukan
+                    juga informasi tentang Kd_Dosen, Nm_Dosen.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    2. Suatu klinik memiliki praktek dokter bersama, sehingga dalam klinik tersebut memiliki
+                    banyak dokter. Seorang pasien, apabila akan berobat harus diperiksa oleh dokter dan
+                    sebaliknya dokter pun harus memeriksa pasien. Setiap selesai diperiksa pasien biasanya
+                    menerima resep berupa obat dan biasanya setiap pasien menerima beberapa jenis obat.
+                    <br>
+                    Informasi tentang dokter adalah kode dokter, nama dokter, spesialis dan tarif. Sedangkan
+                    informasi tentang pasien adalah nomor pasien, nama pasien dan alamat. Informasi
+                    tentang obat adalah kode obat, nama obat, dosis.
+                </p>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1 class="font-bold text-2xl text-gray-600 ml-2">9.3 Normalisasi
+            </h1>
+            <p class="text-lg text-gray-600 mt-4 ml-10">
+                Normalisasi adalah proses pengelompokkan data ke dalam bentuk tabel atau relasi atau file untuk
+                menyatakan entitas dan hubungan mereka sehingga terwujud satu bentuk database yang
+                mudah untuk dimodifikasi.
+            </p>
+
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                Jenis-Jenis Key:
+            </p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    1. <strong>Super Key</strong>: merupakan satu atau lebih atribut yang dapat membedakan setiap baris
+                    data dalam sebuah tabel secara unik.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    2. <strong>Candidate Key</strong>: merupakan kumpulan atribut minimal yang dapat membedakan setiap
+                    baris data dalam sebuah tabel secara unik.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    3. <strong>Primary Key</strong>: memilih sebuah dari Candidate Key, dimana jaminan keunikan key-nya
+                    lebih baik.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    4. <strong>Alternate Key</strong>: Candidate Key yang tidak dijadikan primary key
+                </p>
+            </ul>
+            <br>
+
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                Langkah-langkah pembentukan Normalisasi
+
+            </p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    1. <strong>Bentuk Tidak Normal (Unnormalized Form)
+                    </strong>
+                </p>
+                <li class=" list-none text-gray-600 text-lg ml-14">
+                    <span class="  text-gray-600">
+                        Pada bentuk ini merupakan kumpulan data yang tidak ada keharusan mengikuti format
+                        tertentu, dapat saja data tidak lengkap atau terduplikasi.
+                    </span>
+                </li>
+
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    2. <strong> Bentuk Normal Satu ( 1 NF)
+                    </strong>
+                </p>
+                <li class=" list-none text-gray-600 text-lg ml-14">
+                    <span class="  text-gray-600">
+                        Yaitu bila relasi tersebut mempunyai nilai data yang atomic, artinya tidak ada lagi
+                        kerangkapan data.
+                    </span>
+                </li>
+
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    3. <strong> Bentuk Normal Dua (2 NF)
+                    </strong>
+                </p>
+                <li class=" list-none text-gray-600 text-lg ml-14">
+                    <span class="  text-gray-600">
+                        Yaitu bila relasi tersebut merupakan 1 NF dan setiap atribut tergantung penuh pada primary
+                        key.
+                    </span>
+                </li>
+
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    4. <strong> Bentuk Normal Ketiga (3 NF)
+                    </strong>
+                </p>
+                <li class=" list-none text-gray-600 text-lg ml-14">
+                    <span class="  text-gray-600">
+                        Yaitu bila relasi merupakan 2 NF dan tidak bergantung secara transitif pada primary key
+                    </span>
+                </li>
+            </ul>
+
+
+
+
+
+
+
+            <!-- Author Information -->
+            <div class="flex items-center mt-16">
+                <img src="../public/profile blog.jpg" alt="Author Avatar" class="h-10 w-10 rounded-full mr-4">
+                <div>
+                    <p class="text-sm text-gray-600">Written by
+                        <span class="font-bold">Ahmad Maulana</span>
+                    </p>
+                    <p class="text-sm text-gray-600">Follow on
+                        Instagram: <a href="https://www.instagram.com/a.hmadmaulana/?igshid=YTQwZjQ0NmI0OA%3D%3D"
+                            class="text-blue-500 hover:underline">@a.hmadmaulana</a>
+                    </p>
+                </div>
+            </div>
+            <!-- Comments Section -->
+        </article>
+
+
+
+        <div>
+            <a href="article1.html">Mulai Ulang Dari Bab 1 ?</a>
+        </div>
+
+    </section>
+
+    <section id="Materi" class="mt-40">
+        <h1 class="text-xl font-bold text-gray-600 text-center" id="entry-text">MATERI <p>SISTEM INFORMASI (APSI)
+            </p>
+        </h1>
+        <div class="mx-auto flex flex-col grid gap-9 lg:grid-cols-3 md:grid-cols-2 p-4" id="article">
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article1.html"></a>
+                </div>
+                <div class="group relative bg-fixed">
+                    <img src="../public/konsep dasar.png" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article1.html">
+                            <span class="absolute inset-0 "></span>
+                            BAB 1 <p>KONSEP DASAR</p>
+                        </a>
+                    </h3>
+                </div>
+
+            </article>
+
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article2.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/bab 2.jpg " class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article2.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 2 <p>PENGEMBANGAN SISTEM</p>
+                        </a>
+                    </h3>
+
+                </div>
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article3.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/bab 3.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article3.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 3 <p>KEBIJAKAN & PERENCANAAN SISTEM</p>
+                        </a>
+                    </h3>
+                </div>
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article4.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/bab4.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article4.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 4 <p>ANALISIS SISTEM</p>
+                        </a>
+                    </h3>
+                </div>
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article5.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/bab 5.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article5.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 5 <p>TEKNIK PENGUMPULAN DATA</p>
+                        </a>
+                    </h3>
+
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article6.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/bab 6.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article6.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 6 <p>DESAIN SISTEM</p>
+                        </a>
+                    </h3>
+
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article7.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/bab 7.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article7.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 7 <p>DESAIN SISTEM SECARA UMUM</p>
+                        </a>
+                    </h3>
+                </div>
+            </article>
+
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article8.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/bab8.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article8.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 8 <p>DESAIN SISTEM TERINCI</p>
+                        </a>
+                    </h3>
+            </article>
+
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article9.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/bab9.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article9.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 9 <p>PERANGKAT PERMODELAN SISTEM</p>
+                        </a>
+                    </h3>
+            </article>
+    </section>
+
+    <div class="mt-18">
+        <footer class="bg-footer text-gray-600 p-2 shadow-inner">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2023 Ahmad Maulana. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+
+
+
+        // Fungsi untuk melakukan scroll halus
+        function smoothScroll(targetId) {
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Menambahkan event listener pada link Materi
+        document.addEventListener('DOMContentLoaded', function () {
+            const materiLink = document.querySelector('a[href="#Materi"]');
+
+            if (materiLink) {
+                materiLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    smoothScroll('Materi');
+                });
+            }
+        });
+
+        // Menambahkan event listener pada link Home
+        document.addEventListener('DOMContentLoaded', function () {
+            const materiLink = document.querySelector('a[href="#Home"]');
+
+            if (materiLink) {
+                materiLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    smoothScroll('Home');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
